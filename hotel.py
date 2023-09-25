@@ -49,13 +49,13 @@ def calculate_order(order, is_child=False):
 
 # Apply discount based on the total bill
 def apply_discount(total):
-    if total < 10:
+    if total < 100:
         return total - (total * 0.005)
-    elif 10 <= total < 20:
+    elif 100 <= total < 200:
         return total - (total * 0.01)
-    elif 20 <= total < 30:
+    elif 200 <= total < 300:
         return total - (total * 0.015)
-    elif 30 <= total < 40:
+    elif 300 <= total < 400:
         return total - (total * 0.02)
     else:
         return total - (total * 0.05)
